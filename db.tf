@@ -1,6 +1,8 @@
 data "mongodbatlas_advanced_cluster" "this" {
   project_id = var.atlas_project_id
   name       = var.cluster_name
+
+  depends_on = [mongodbatlas_privatelink_endpoint_service.this]
 }
 
 locals {
