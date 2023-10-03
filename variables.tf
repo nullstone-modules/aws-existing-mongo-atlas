@@ -20,7 +20,7 @@ variable "atlas_private_link_id" {
   description = "The id of the private link to connect to the cluster"
 }
 
-variable "atlas_cluster_name" {
+variable "cluster_name" {
   type        = string
   description = "The name of the Atlas cluster"
 }

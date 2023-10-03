@@ -29,12 +29,12 @@ output "db_admin_secret_id" {
 }
 
 output "atlas_public_key_secret_id" {
-  value       = aws_secretsmanager_secret.atlas_public_key.name
+  value       = var.atlas_public_key_secret_id
   description = "The public key used to authenticate to your MongoDB Atlas account"
 }
 
 output "atlas_private_key_secret_id" {
-  value       = aws_secretsmanager_secret.atlas_private_key.name
+  value       = var.atlas_private_key_secret_id
   description = "The private key used to authenticate to your MongoDB Atlas account"
 }
 

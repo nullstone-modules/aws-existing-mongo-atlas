@@ -1,6 +1,6 @@
 data "mongodbatlas_advanced_cluster" "this" {
   project_id = var.atlas_project_id
-  name       = var.atlas_cluster_name
+  name       = var.cluster_name
 }
 
 locals {
