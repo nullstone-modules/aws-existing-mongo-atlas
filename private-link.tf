@@ -1,7 +1,7 @@
 data "mongodbatlas_privatelink_endpoint" "this" {
   project_id      = var.atlas_project_id
   private_link_id = var.atlas_private_link_id
-  provider_name = "AWS"
+  provider_name   = "AWS"
 }
 
 resource "aws_vpc_endpoint" "this" {
