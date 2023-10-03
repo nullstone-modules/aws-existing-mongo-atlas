@@ -1,10 +1,10 @@
-variable "atlas_public_key" {
+variable "atlas_public_key_secret_id" {
   type        = string
   sensitive   = true
   description = "The public key used to authenticate to your MongoDB Atlas account"
 }
 
-variable "atlas_private_key" {
+variable "atlas_private_key_secret_id" {
   type        = string
   sensitive   = true
   description = "The private key used to authenticate to your MongoDB Atlas account"
