@@ -25,7 +25,8 @@ variable "cluster_name" {
   description = "The name of the Atlas cluster"
 }
 
-variable "db_admin_secret_id" {
+variable "db_admin_password" {
   type        = string
-  description = "The ID of the secret containing the database admin password"
+  sensitive   = true
+  description = "The password for the database admin user"
 }
