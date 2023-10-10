@@ -24,7 +24,7 @@ output "db_security_group_id" {
 }
 
 output "db_admin_secret_id" {
-  value       = aws_secretsmanager_secret.db_admin_password.name
+  value       = aws_secretsmanager_secret.db_admin.name
   description = "string ||| The name of the secret in AWS Secrets Manager containing the password"
 }
 
